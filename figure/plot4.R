@@ -33,6 +33,7 @@ datasubset_numeric_sub3<-as.numeric(as.character(datasubset[,5]))
 datasubset[,5]<-datasubset_numeric_sub3
 
 ## Create png of plot4  
+Sys.setlocale("LC_ALL", "en_US")
 png(filename = "plot4.png", width = 480, height = 480)
 par(mfrow=c(2,2))
 ## top left

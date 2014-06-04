@@ -23,6 +23,7 @@ datasubset_numeric_sub3<-as.numeric(as.character(datasubset[,9]))
 datasubset[,9]<-datasubset_numeric_sub3
 
 ## Create png of plot3  
+Sys.setlocale("LC_ALL", "en_US")
 png(filename = "plot3.png", width = 480, height = 480)
 plot.new()
 plot(datasubset$DateTime,datasubset$Sub_metering_1,type="n",ylab="Energy sub metering",xlab="")

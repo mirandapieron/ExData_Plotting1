@@ -19,6 +19,7 @@ datasubset_numeric<-as.numeric(as.character(datasubset[,3]))
 datasubset[,3]<-datasubset_numeric
 
 ## Create png of plot2  
+Sys.setlocale("LC_ALL", "en_US")
 png(filename = "plot2.png", width = 480, height = 480)
 plot.new()
 plot(datasubset$DateTime,datasubset$Global_active_power,type="n",ylab="Global Active Power (kilowatts)",xlab="")
